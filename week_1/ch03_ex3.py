@@ -6,4 +6,4 @@ myText
 myText
 
 #snake_case
-my_text
+my_text = 'Hello World!'
