@@ -1,1 +1,9 @@
 math
+
+f(x) = x^2
+function name is f
+
+f(2) = 2^2 = 4
+argument: 2
+returned value: 4
+

@@ -9,6 +9,6 @@ print(
     not b and c,
     b or not c,
     b and c or a,
-    c or b and a  # bonus
+    c or b and a  # bonus   # trap!! do "and" first   N A O
 )
 

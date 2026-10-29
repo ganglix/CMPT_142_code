@@ -28,3 +28,24 @@ def letter_grade(grade):
         print("F")
 
 
+
+def letter_grade_v2(grade):
+    """
+    print the letter grade of a number grade
+    :param grade: int, numeric grade
+    :return: None
+    """
+    if grade <= 100 and grade >= 95:
+        print("A+")
+    elif grade <= 94 and grade >= 85:
+        print("A")
+    elif grade <= 84 and grade >= 75:
+        print("B")
+    elif grade <= 74 and grade >= 65:
+        print("C")
+    elif grade <= 64 and grade >= 50:
+        print("D")
+    else:
+        print("F")
+
+letter_grade_v2(70)

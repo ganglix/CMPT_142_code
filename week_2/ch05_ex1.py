@@ -22,4 +22,15 @@ print("One blanket and two pillows will cost $",
       ", I will have $", (cash - (blanket_cost + pillow_cost * 2)),
       "left.")
 
+# fix: str + str
+print("One blanket and two pillows will cost $"+
+      str(blanket_cost + pillow_cost * 2) + ". If I pay with $" + str(cash)+
+      ", I will have $" + str((cash - (blanket_cost + pillow_cost * 2))),
+      "left.")
+
+# fix: sep ="", manually adjust spaces in strings
+print("One blanket and two pillows will cost $",
+      blanket_cost + pillow_cost * 2, ". If I pay with $", cash,
+      ", I will have $", (cash - (blanket_cost + pillow_cost * 2)),
+      " left.", sep="")  # the default sep = " "
 
