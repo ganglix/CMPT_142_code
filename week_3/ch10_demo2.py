@@ -1,29 +1,29 @@
-# List msgs contains sublists of the form [msg,days old]:
-# msgs = [ ["Forgot the recipe again! #nofood",3],
-# ["such a gluten #food #fivestar",10] ]
-# Use list comprehensions to:
-# (a) create list food_msgs of messages containing "#food"
-# (b) create a new copy of food_msgs where messages are
-# appended with "#yawn"
+# Up until now, only immutable data types have been passed
+# as arguments to functions. What happens when we pass
+# mutable data?
+# Let us observe the effect on an input variable before,
+# during, and after a function call that changes the value.
 
-# Topic : List Comprehensions
-# DEMO
-# list of social media messages as sublists ( message , days since posted )
 
-msgs = [["Forgot the recipe again! #nofood", 3],
-        ["such a gluten #food #fivestar", 10],
-        ["International #Food day! Hooray!", 1],
-        ["Apple pie is bestest food", 5],
-        ["lunchtime? #food #craving hits again", 9]]
+def appendage(minilist, x):
+    minilist.append(42)
+    x = x + 5
 
-# (a) create list food_msgs of messages containing "#food"
+
+L = [10, 20, 30]
+x = 50
+appendage(L, x)
+print(L)
+print(x)
 
 
 
-# list comprehension
 
 
 
-# (b) create a new copy of food_msgs where messages are
-# appended with "#yawn" to the message
+
+# -----------------------------------------
+# # does this operation create a new list?
+# .copy()
+# [i for i in oldlist]
 
