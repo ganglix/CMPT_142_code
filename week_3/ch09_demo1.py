@@ -10,4 +10,22 @@ a3 b3 c3 d3 e3 f3 g3 h3
 a2 b2 c2 d2 e2 f2 g2 h2
 a1 b1 c1 d1 e1 f1 g1 h1
 """
+# # print first row
+# row = 8
+# for col in 'abcdefgh':
+#     print(col + str(row), end=' ')  # end by default is newline '\n'
+# print() # print a newline
+#
+# # print second row
+# row = 7
+# for col in 'abcdefgh':
+#     print(col + str(row), end=' ')  # end by default is newline '\n'
 
+
+# print all rows
+for row in range(8,0,-1):   # row = 8,7,6...1
+    # for each row, print all cols
+    for col in 'abcdefgh':
+        print(col + str(row), end=' ')
+    # when each row is done, print a newline
+    print()

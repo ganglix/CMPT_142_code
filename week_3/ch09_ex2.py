@@ -3,3 +3,9 @@
 # by both 3 and 5. Print how many of these numbers were
 # found
 
+count = 0
+for n in range(300, 600+1):
+    if n % 3 == 0 and n % 5 == 0:
+        count += 1
+
+print(f'{count} numbers were found divisible by both 3 and 5')
