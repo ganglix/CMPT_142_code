@@ -9,10 +9,55 @@ def is_valid_username(username):
     """
 
 # Testing - black box
-# black box reason:
-# coverage:
+# black box reason: To test if the function does it has promised to do, in the docstring
+# coverage: all functionalities stated in the docstring
 
 # test cases
+"""
+    - 1-18 characters long
+inputs: 'a'
+outputs_expected: True  #we read the whole docstring to figure out
+reason: 'a' is one character long letter, no special chars, no underscore
+
+inputs: ''
+outputs_expected: False
+reason: '' has the length of 0, not valid, should return False
+
+inputs: 'a' * 18
+outputs_expected: True
+reason: 'a' * 18 has a length of 18, still with in the length boundaries
+
+inputs: 'a' * 19
+outputs_expected: False
+reason: 'a' * 19 has a length of 19, exceeding max length
+
+
+    - can be letters and/or numbers
+inputs: '12'
+outputs_expected: True  #we read the whole docstring to figure out
+reason: only numbers, valid
+
+inputs: '12abc'
+outputs_expected: True  #we read the whole docstring to figure out
+reason: both letters and numbers, valid
+
+inputs: 'short@gmail.com'
+outputs_expected: False  #we read the whole docstring to figure out
+reason: it has special characters, not just numbers or letters, and not exceeding max length
+
+    - underscore is allowed if it’s not the first character
+inputs: '_underscore'
+outputs_expected: False  #we read the whole docstring to figure out
+reason: _ is the first character, invalid
+
+inputs: 'a_b'
+outputs_expected: True  #we read the whole docstring to figure out
+reason: _ is in the middle, valid
+
+inputs: 'a__'
+outputs_expected: True  #we read the whole docstring to figure out
+reason: _ is not the first character, valid
+"""
 
 
 
@@ -20,18 +65,18 @@ def is_valid_username(username):
 # test driver example
 # test driver is a program that runs the test cases
 
+inputs = 'a'
+outputs_expected = True  #we read the whole docstring to figure out
+reason = "'a' is one character long letter, no special chars, no underscore"
 
-
-
-
-
-
-
-
-
-
-
-
+outputs = is_valid_username(inputs)
+# no news is good news
+if outputs != outputs_expected:
+    print('test case failed')
+    print('inputs: ', inputs)
+    print('outputs_expected: ', outputs_expected)
+    print('function outputs: ', outputs)
+    print('reason', reason)
 
 
 
