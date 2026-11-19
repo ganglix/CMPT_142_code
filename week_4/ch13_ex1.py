@@ -7,17 +7,11 @@
 # •keys are ice cream flavours
 # •values are number of students with that favourite flavour
 
-survey = {"Calla": "vanilla",
-          "Jassika": "vanilla",
-          "Fletcher": "vanilla",
-          "Logan": "vanilla",
-          "Joshua": "vanilla",
-          "Marl": "vanilla",
-          "Marc": "vanilla",
-          "Kartik": "vanilla",
-          "Kale": "vanilla",
-          "Barney": "vanilla",
-          "Rhett": "vanilla",
-          "Gang": "vanilla"}
-
-
+survey = {"Afan": '',
+          "Janet": '',
+          "Kelei": '',
+          "Lilith": '',
+          "Chaz": '',
+          "Dominick": '',
+          "Gang": '',
+          }
